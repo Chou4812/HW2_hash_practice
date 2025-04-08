@@ -31,16 +31,6 @@ for word, count in sorted_items:
 labels, values = zip(*sorted_items)
 
 plt.figure(figsize=(10, 6))
-plt.bar(labels, values, color='lightgreen')
-plt.xlabel("單字")
-plt.ylabel("出現次數")
-plt.title("英文字出現次數統計圖")
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()
-
-
-plt.figure(figsize=(10, 6))
 plt.bar(labels, values)
 plt.xlabel("單字")
 plt.ylabel("出現次數")
